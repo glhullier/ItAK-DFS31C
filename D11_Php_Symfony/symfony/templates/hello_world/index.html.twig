@@ -1,0 +1,61 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HelloWorldController!{% endblock %}
+
+{% block body %}
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Web</title>
+    <style>
+        body {
+            background-color: #e0f7fa;
+            font-family: Arial, sans-serif;
+        }
+        .message-box {
+            background-color: #0288d1;
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 50px auto;
+            width: 80%;
+            max-width: 600px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .message-box h1 {
+            display: flex;
+            align-items: center;
+        }
+        .message-box h1::before {
+            content: '✔';
+            color: green;
+            margin-right: 10px;
+        }
+        .message-content {
+            background-color: white;
+            color: black;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .file-path {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="message-box">
+        <h1>Hello HelloWorldController!</h1>
+        <div class="message-content">
+            <p>This friendly message is coming from:</p>
+            <p class="file-path">• Your controller at C:/Users/lhull1/Workspace/ITAK-DF531C/D11_Php_Symfony/symfony/src/Controller/HelloWorldController.php</p>
+            <p class="file-path">• Your template at C:/Users/lhull1/Workspace/ITAK-DF531C/D11_Php_Symfony/symfony/templates/hello_world/index.html.twig</p>
+        </div>
+    </div>
+</body>
+</html>
+
+{% endblock %}
